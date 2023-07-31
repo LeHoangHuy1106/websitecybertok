@@ -22,7 +22,7 @@
                 <style type="text/css">
                     * {
                         touch - action: pan-y;
-            }
+                }
                 </style>
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
@@ -87,52 +87,53 @@ if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.documentElement.scrollTop = 0;
 }
 </script>
-<header style="background: -webkit-gradient(linear, left top, right top, from(#0180C5), to(#0180C5)); background: linear-gradient(to right, #0180C5, #0180C5); position: sticky; top: 0; z-index: 9; " class="header_section">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-8">
-                <nav class="navbar navbar-expand-lg custom_nav-container ">
-                    <a class="navbar-brand" href="index.html">
-                        <span>
-                            Cypertok
-                        </span>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <div class="d-flex  flex-column flex-lg-row align-items-center">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="about.html">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="service.html">Service</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="channel.html">Channel</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="career.html">Career</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="gallery.html">Gallery</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact</a>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </div>
-</header>
 
 <body>
+    <header style="background: -webkit-gradient(linear, left top, right top, from(#0180C5), to(#0180C5)); background: linear-gradient(to right, #0180C5, #0180C5); position: sticky; top: 0; z-index: 9; " class="header_section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8">
+                    <nav class="navbar navbar-expand-lg custom_nav-container ">
+                        <a class="navbar-brand" href="index.html">
+                            <span>
+                                Cybertok
+                            </span>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <div class="d-flex  flex-column flex-lg-row align-items-center">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="about.html">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="service.html">Service</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="channel.html">Channel</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="career.html">Career</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="gallery.html">Gallery</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html">Contact</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
     <div class="hero_area">
         <!-- slider section -->
         <section class=" slider_section ">
@@ -463,13 +464,13 @@ if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     </div>
     <script type='text/javascript'>
         $('.modal img').bind('contextmenu', function(e) {
-    return false;
+return false;
 });
         $('.img-intro img').bind('contextmenu', function(e) {
-    return false;
+return false;
 });
         $('.fancylight img').bind('contextmenu', function(e) {
-    return false;
+return false;
 });
     </script>
     <script>
@@ -488,14 +489,14 @@ if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 
         // global handler
         document.addEventListener('click', function(e) {
-    if (e.target.className.indexOf('modal-target') !== -1) {
-        var img = e.target;
+if (e.target.className.indexOf('modal-target') !== -1) {
+var img = e.target;
         var modalImg = document.getElementById("modal-content");
         var captionText = document.getElementById("modal-caption");
         modal.style.display = "block";
         modalImg.src = img.src;
         captionText.innerHTML = img.alt;
-    }
+}
 });
     </script>
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
