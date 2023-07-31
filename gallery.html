@@ -1,0 +1,1602 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Website Cybertok | Gallery</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+      <script src="app.js"></script>
+    <script>
+        window.mmDataLayer = window.mmDataLayer || [];
+
+        function mmData(o) {
+            mmDataLayer.push(o);
+        }
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-192937744-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-192937744-4');
+    </script>
+
+    <link rel="icon" type="image/ico" href="https://bos2bos.com/images/logobos2bos.ico" />
+    <link rel="icon" type="image/x-icon" href="https://bos2bos.com/images/logobos2bos.ico" />
+    <link rel="shortcut icon" href="https://bos2bos.com/images/logobos2bos.ico" type="image/ico">
+    <link rel="shortcut icon" href="https://bos2bos.com/images/logobos2bos.ico" type="image/x-icon">
+    <link rel="canonical" href="https://bos2bos.com/gallery" />
+
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <style type="text/css">
+        * {
+            touch-action: pan-y;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Galeri, Foto, Bos2Bos, Bos Tobos Indonesia, E-Commerce, Tokopedia, Shopee, Belanja Online">
+    <meta name="description" content="BOS TOBOS adalah sebuah perusahaan e-commerce berbasis aplikasi di Indonesia">
+    <meta name="twitter:card" content="BOS TOBOS adalah sebuah perusahaan e-commerce berbasis aplikasi di Indonesia.">
+    <meta name="twitter:url" content="https://www.bos2bos.com/gallery/">
+    <meta name="twitter:title" content="Galeri - Website Resmi BOS2BOS Indonesia">
+    <meta name="twitter:creator" content="Bos2bos">
+    <meta name="twitter:description" content="BOS TOBOS adalah sebuah perusahaan e-commerce berbasis aplikasi di Indonesia">
+    <meta name="twitter:image" content="https://bos2bos.com/images/logobos2bos.png">
+
+    <meta property="og:title" name="og:title" content="Galeri Bos2bos">
+    <!--<meta property="og:image" content="https://bos2bos.com/images/logobos2bos.png" />
+	<meta property="og:image:secure_url" content="https://bos2bos.com/images/logobos2bos.png" />-->
+    <meta property="og:site_name" content="www.bos2bos.com">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:description" content="BOS TOBOS adalah sebuah perusahaan e-commerce berbasis aplikasi di Indonesia.">
+    <meta property="og:url" content="https://www.bos2bos.com/gallery/">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "Bos2bos",
+            "url": "https://bos2bos.com/gallery",
+            "sameAs": [
+                "https://www.facebook.com/bos2bosindonesia/",
+                "https://www.instagram.com/bos2bos_host/",
+                "https://www.tiktok.com/@bos2bos_indonesia21"
+            ],
+            "logo": "https://www.bos2bos.com/images/logobos2bos.png"
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,500|Poppins:400,700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" media="screen and (min-width: 1750px)" href="css/ultrascreen.css" type="text/css">
+    <link rel="stylesheet" media="screen and (min-width: 992px) and (max-width: 1745px)" href="css/widescreen.css" type="text/css">
+    <link rel="stylesheet" media="screen and (min-width: 601px) and (max-width: 991px)" href="css/screen.css" type="text/css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="css/smallscreen.css" type="text/css">
+
+    <link href="css/responsive.css" rel="stylesheet" />
+    <style>
+        #loader {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: url("https://2.bp.blogspot.com/-YIkNxVZ0j-g/WfpE8n_XOeI/AAAAAAAACQ4/5QLSs5eOhpUfqI5p9z6nUPPADuPjxJb5ACLcBGAs/s1600/800%2B%25281%2529.gif") 50% 50% no-repeat rgb(255, 255, 255);
+            opacity: 0.9;
+        }
+
+        #loader p {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 180px;
+        }
+
+        .modal-target {
+            width: 300px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .modal-target:hover {
+            opacity: 0.7;
+        }
+
+        /* The Modal (background) */
+
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.8);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content (image) */
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 55%;
+            opacity: 1 !important;
+            max-width: 400px;
+        }
+
+        /* Caption of Modal Image */
+
+        .modal-caption {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 1200px;
+            text-align: center;
+            color: white;
+            font-weight: 700;
+            font-size: 1em;
+            margin-top: 32px;
+        }
+
+        /* Add Animation */
+
+        .modal-content,
+        .modal-caption {
+            -webkit-animation-name: zoom;
+            -webkit-animation-duration: 0.6s;
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+
+        @-webkit-keyframes zoom {
+            from {
+                -webkit-atransform: scale(0)
+            }
+            to {
+                -webkit-transform: scale(1)
+            }
+        }
+
+        @keyframes zoom {
+            from {
+                transform: scale(0)
+            }
+            to {
+                transform: scale(1)
+            }
+        }
+
+        /* The Close Button */
+
+        .modal-close {
+            position: absolute;
+            top: 55px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .modal-close:hover,
+        .modal-close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background-color: #fff;
+        }
+
+        .preloader .loading {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font: 14px arial;
+        }
+
+        #TopBtn {
+            display: none;
+            position: fixed;
+            bottom: 120px;
+            right: 25px;
+            z-index: 99;
+            font-size: 20px;
+            color: #FFFFFF;
+            padding: 10px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            border-radius: 35px;
+            background-color: #28ae4a;
+            font-family: "Fredoka One", cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="topFunction()" id="TopBtn" title="Go to top"><img width="40" height="40" src="images/up.png"/></button>
+    <script>
+        var mybutton = document.getElementById("TopBtn");
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <header style="  background: -webkit-gradient(linear, left top, right top, from(#28ae4a), to(#20763E));
+    background: linear-gradient(to right, #28ae4a, #20763E);position: sticky; top: 0;z-index: 9;" class="header_section">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-lg-8">
+                      <nav class="navbar navbar-expand-lg custom_nav-container ">
+                          <a class="navbar-brand" href="index.html">
+                  <span>
+                      Cybertok
+                  </span>
+                </a>
+                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+  
+                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                              <div class="d-flex  flex-column flex-lg-row align-items-center">
+                                  <ul class="navbar-nav">
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="about.html">About</a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="service.html">Service</a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="channel.html">Channel</a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="career.html">Career</a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="gallery.html">Gallery</a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="contact.html">Contact</a>
+                                      </li>
+  
+                                  </ul>
+                              </div>
+                          </div>
+                      </nav>
+                  </div>
+              </div>
+          </div>
+      </header>
+    <div style="height:78vh" class="hero_area">
+        <section class=" slider_section ">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-5 col-md-6">
+                                    <div class="slider_detail-box">
+                                        <h1>
+                                            Tiktok Specialist
+                                        </h1>
+                                        <p>
+                                            Bos2bos berfokus pada pengembangan kreator/talent/KOL dengan memberikan berbagai benefit dan dukungan kreatif untuk pengembangan konten.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="slider_img-box">
+                                        <img src="images/bostar/coverbostar.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="problem_section layout_padding">
+        <div class="container">
+            <div class="custom_heading-container">
+                <h2>
+                    Gallery
+                </h2>
+            </div>
+            <div class="layout_padding2">
+                <div class="image-box">
+
+                    <div class="container-fluid mt-2">
+                        <div class="container" style="max-width: 100%;display: inline;">
+                            <div align="center">
+                                <div>
+                                    <button class="btn btn-menu-list filter-button" data-filter="all">Semua</button>
+                                    <button class="btn btn-menu-list filter-button" data-filter="phtbostartennie">Bostar Tennie</button>
+                                    <button class="btn btn-menu-list filter-button" data-filter="phtbostarlibra">Bostar Libra</button>
+                                    <button class="btn btn-menu-list filter-button" data-filter="phtbostartea">Bostar Tea</button>
+                                    <button class="btn btn-menu-list filter-button" data-filter="phtbostarcandy">Bostar Candy </button>
+                                    <button class="btn btn-menu-list filter-button" data-filter="phtbostarhana">Bostar Hana</button>
+                                    <button class="btn btn-menu-list filter-button" data-filter="phtbostarclaudia">Bostar Claudia</button>
+                                    <button class="btn btn-menu-list filter-button" data-filter="phtbostardisney">Bostar Disney</button>
+                                    <br/><br/>
+                                    <button class="btn btn-menu-list filter-button" data-filter="phtbostarcoffee">Bostar Coffee </button>
+                                    <button class="btn btn-menu-list filter-button" data-filter="phtbostarmilky">Bostar Milky </button>
+                                    <button class="btn btn-menu-list filter-button" data-filter="phtbostarlove">Bostar Love </button>
+                                    <button class="btn btn-menu-list filter-button" data-filter="phtbostarleon">Bostar Leon </button>
+                                    <button class="btn btn-menu-list filter-button" data-filter="phtbostargita">Bostar Gita </button>
+                                    <button class="btn btn-menu-list filter-button" data-filter="phtbostarrey">Bostar Rey </button>
+                                    <button class="btn btn-menu-list filter-button" data-filter="phtbostarpio">Bostar Pio</button>
+                                    <br/><br/>
+                                    <button class="btn btn-menu-list filter-button" data-filter="phtbostarzaza">Bostar Zaza </button>
+                                    <button class="btn btn-menu-list filter-button" data-filter="phtbostarsidney">Bostar Sidney </button>
+                                    <button class="btn btn-menu-list filter-button" data-filter="phtbostareca">Bostar Eca </button>
+                                    <button class="btn btn-menu-list filter-button" data-filter="phtbostarpinky">Bostar Pinky </button>
+                                    <button class="btn btn-menu-list filter-button" data-filter="phtbostarsky">Bostar Sky </button>
+                                    <button class="btn btn-menu-list filter-button" data-filter="phtbostaraa">Bostar Aa </button>
+                                    <button class="btn btn-menu-list filter-button" data-filter="phtbostarapril">Bostar April </button>
+                                </div>
+                                <div class="row">
+                                    <div class="row">
+
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarlibra">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarlibra.JPG"
+					                         alt="Bostar Libra">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarlibra">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarlibra2.JPG"
+					                         alt="Bostar Libra">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarlibra">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"   
+					                         data-src="images/bostar/bostarlibra3.JPG"
+					                         alt="Bostar Libra">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarlibra">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarlibra4.JPG"
+					                         alt="Bostar Libra">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostartennie">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarteenie.JPG"
+					                         alt="Bostar Tennie">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostartennie">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarteenie2.JPG"
+					                         alt="Bostar Tennie">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostartennie">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarteenie3.JPG"
+					                         alt="Bostar Tennie">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostartennie">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarteenie4.JPG"
+					                         alt="Bostar Tennie">
+					                </a>
+                                        </div>
+
+
+
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostartea">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostartea.JPG"
+					                         alt="Bostar Tea">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostartea">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostartea2.JPG"
+					                         alt="Bostar Tea">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostartea">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostartea3.JPG"
+					                         alt="Bostar Tea">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostartea">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostartea4.jpg"
+					                         alt="Bostar Tea">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarleon">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarleon.JPG"
+					                         alt="Bostar Leon">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarleon">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarleon2.JPG"
+					                         alt="Bostar Leon">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarleon">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"   
+					                         data-src="images/bostar/bostarleon3.JPG"
+					                         alt="Bostar Leon">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarleon">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarleon4.JPG"
+					                         alt="Bostar Leon">
+					                </a>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostaryellow">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostaryellow.jpg"
+					                         alt="Bostar Yellow">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostaryellow">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostaryellow2.jpg"
+					                         alt="Bostar Yellow">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostaryellow">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"   
+					                         data-src="images/bostar/bostaryellow3.jpg"
+					                         alt="Bostar Yellow">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostaryellow">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostaryellow4.jpg"
+					                         alt="Bostar Yellow">
+					                </a>
+                                        </div>
+
+
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarsidney">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarsidney.JPG"
+					                         alt="Bostar Sidney">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarsidney">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarsidney2.JPG"
+					                         alt="Bostar Sidney">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarsidney">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"   
+					                         data-src="images/bostar/bostarsidney3.JPG"
+					                         alt="Bostar Sidney">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarsidney">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarsidney4.JPG"
+					                         alt="Bostar Sidney">
+					                </a>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarlove">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarlove.jpg"
+					                         alt="Bostar Love">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarlove">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarlove2.jpg"
+					                         alt="Bostar Love">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarlove">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"   
+					                         data-src="images/bostar/bostarlove3.jpg"
+					                         alt="Bostar Love">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarlove">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarlove4.jpg"
+					                         alt="Bostar Love">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarcisasa">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarcisasa.jpg"
+					                         alt="Bostar Sasa">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarcisasa">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarcisasa2.jpg"
+					                         alt="Bostar Sasa">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarcisasa">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"   
+					                         data-src="images/bostar/bostarcisasa3.jpg"
+					                         alt="Bostar Sasa">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarcisasa">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarcisasa4.jpg"
+					                         alt="Bostar Sasa">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarcaca">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarcaca.jpg"
+					                         alt="Bostar Caca">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarcaca">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarcaca2.jpg"
+					                         alt="Bostar Caca">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarcaca">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"   
+					                         data-src="images/bostar/bostarcaca3.jpg"
+					                         alt="Bostar Caca">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarcaca">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarcaca4.jpg"
+					                         alt="Bostar Caca">
+					                </a>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarlaura">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarlaura.jpeg"
+					                         alt="Bostar Laura">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarlaura">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarlaura2.jpg"
+					                         alt="Bostar Laura">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarlaura">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"   
+					                         data-src="images/bostar/bostarlaura3.jpg"
+					                         alt="Bostar Laura">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarlaura">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarlaura4.jpg"
+					                         alt="Bostar Laura">
+					                </a>
+                                        </div>
+
+
+
+
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostardisney">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostardisney.jpg"
+					                         alt="Bostar Disney">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostardisney">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostardisney2.jpg"
+					                         alt="Bostar Disney">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostardisney">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"   
+					                         data-src="images/bostar/bostardisney3.jpg"
+					                         alt="Bostar Disney">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostardisney">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostardisney4.jpg"
+					                         alt="Bostar Disney">
+					                </a>
+                                        </div>
+
+
+
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarhana">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarhana.jpg"
+					                         alt="Bostar Hana">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarhana">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarhana2.jpg"
+					                         alt="Bostar Hana">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarhana">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"   
+					                         data-src="images/bostar/bostarhana3.jpg"
+					                         alt="Bostar Hana">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarhana">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarhana4.jpg"
+					                         alt="Bostar Hana">
+					                </a>
+                                        </div>
+
+
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarclaudia">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarclaudia.jpg"
+					                         alt="Bostar Claudia">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarclaudia">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarclaudia2.jpg"
+					                         alt="Bostar Claudia">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarclaudia">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"   
+					                         data-src="images/bostar/bostarclaudia3.jpg"
+					                         alt="Bostar Claudia">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarclaudia">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarclaudia4.jpg"
+					                         alt="Bostar Claudia">
+					                </a>
+                                        </div>
+
+
+
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarpio">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarpio.jpg"
+					                         alt="Bostar Pio">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarcpio">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarpio2.jpg"
+					                         alt="Bostar Pio">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarpio">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"   
+					                         data-src="images/bostar/bostarpio3.jpg"
+					                         alt="Bostar Pio">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarpio">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarpio4.jpg"
+					                         alt="Bostar Pio">
+					                </a>
+                                        </div>
+
+
+
+
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarzaza">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarzaza.JPG"
+					                         alt="Bostar Zaza">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarzaza">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarzaza2.jpg"
+					                         alt="Bostar Zaza">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarzaza">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"   
+					                         data-src="images/bostar/bostarzaza3.JPG"
+					                         alt="Bostar Zaza">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarzaza">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarzaza4.jpg"
+					                         alt="Bostar Zaza">
+					                </a>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostareca">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostareca.JPG"
+					                         alt="Bostar Eca">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostareca">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostareca2.JPG"
+					                         alt="Bostar Eca">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostareca">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"   
+					                         data-src="images/bostar/bostareca3.JPG"
+					                         alt="Bostar Eca">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostareca">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostareca4.JPG"
+					                         alt="Bostar Eca">
+					                </a>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarpinky">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarpinky.jpg"
+					                         alt="Bostar Pinky">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarpinky">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarpinky2.jpg"
+					                         alt="Bostar Pinky">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarpinky">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"   
+					                         data-src="images/bostar/bostarpinky3.jpg"
+					                         alt="Bostar Pinky">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarpinky">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarpinky4.jpg"
+					                         alt="Bostar Pinky">
+					                </a>
+                                        </div>
+
+
+
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarcici">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarcici.jpg"
+					                         alt="Bostar Cici">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarcici">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarcici2.jpg"
+					                         alt="Bostar Cici">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarcici">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarcici3.jpg"
+					                         alt="Bostar Cici">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarcici">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarcici4.jpg"
+					                         alt="Bostar Cici">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarcandy">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"   
+					                         data-src="images/bostar/bostarcandy.jpg"
+					                         alt="Bostar Candy">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarcandy">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"   
+					                         data-src="images/bostar/bostarcandy2.jpg"
+					                         alt="Bostar Candy">
+					                </a>
+                                        </div>
+
+
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarcandy">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarcandy3.jpg"
+					                         alt="Bostar Candy">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarcandy">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarcandy4.jpg"
+					                         alt="Bostar Candy">
+					                </a>
+                                        </div>
+
+
+
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarcoffee">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarcoffee.JPG"
+					                         alt="Bostar Coffee">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarcoffee">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarcoffee2.JPG"
+					                         alt="Bostar Coffee">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarcoffee">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarcoffee3.JPG"
+					                         alt="Bostar Coffee">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarcoffee">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarcoffee4.JPG"
+					                         alt="Bostar Coffee">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarmilky">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarmilky.JPG"
+					                         alt="Bostar Milky">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarmilky">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarmilky2.JPG"
+					                         alt="Bostar Milky">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarmilky">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"   
+					                         data-src="images/bostar/bostarmilky3.JPG"
+					                         alt="Bostar Milky">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarmilky">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarmilky4.JPG"
+					                         alt="Bostar Milky">
+					                </a>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarrose">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarrose.jpg"
+					                         alt="Bostar Rose">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarrose">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"   
+					                         data-src="images/bostar/bostarrose2.jpg"
+					                         alt="Bostar Rose">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarrose">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"   
+					                         data-src="images/bostar/bostarrose3.jpg"
+					                         alt="Bostar Rose">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarrose">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"   
+					                         data-src="images/bostar/bostarrose4.jpg"
+					                         alt="Bostar Rose">
+					                </a>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarsky">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarsky.jpg"
+					                         alt="Bostar Sky">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarsky">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarsky2.jpg"
+					                         alt="Bostar Sky">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarsky">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"   
+					                         data-src="images/bostar/bostarsky3.jpg"
+					                         alt="Bostar Sky">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarsky">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarsky4.jpg"
+					                         alt="Bostar Sky">
+					                </a>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarkimy">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarkimy.JPG"
+					                         alt="Bostar Kimy">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarkimy">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"   
+					                         data-src="images/bostar/bostarkimy2.JPG"
+					                         alt="Bostar Kimy">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarkimy">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarkimy3.JPG"
+					                         alt="Bostar Kimy">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarkimy">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarkimy4.JPG"
+					                         alt="Bostar Kimy">
+					                </a>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarapril">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarapril.jpg"
+					                         alt="Bostar April">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarapril">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarapril2.jpg"
+					                         alt="Bostar April">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarapril">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"   
+					                         data-src="images/bostar/bostarapril3.jpg"
+					                         alt="Bostar April">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarapril">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarapril4.jpg"
+					                         alt="Bostar April">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostargita">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostargita.jpg"
+					                         alt="Bostar Gita">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostargita">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostargita2.jpg"
+					                         alt="Bostar Gita">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostargita">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"   
+					                         data-src="images/bostar/bostargita3.jpg"
+					                         alt="Bostar Gita">
+					                </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostargita">
+                                            <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostargita4.jpg"
+					                         alt="Bostar Gita">
+					                </a>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarmimi">
+                                        <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarmimi.jpg"
+					                         alt="Bostar Mimi">
+					                </a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarmimi">
+                                        <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarmimi2.jpg"
+					                         alt="Bostar Mimi">
+					                </a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarmimi">
+                                        <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"   
+					                         data-src="images/bostar/bostarmimi3.jpg"
+					                         alt="Bostar Mimi">
+					                </a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarmimi">
+                                        <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarmimi4.jpg"
+					                         alt="Bostar Mimi">
+					                </a>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarrey">
+                                        <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarrey.JPG"
+					                         alt="Bostar Rey">
+					                </a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarrey">
+                                        <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarrey2.JPG"
+					                         alt="Bostar Rey">
+					                </a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarrey">
+                                        <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarrey3.JPG"
+					                         alt="Bostar Rey">
+					                </a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostarrey">
+                                        <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostarrey4.JPG"
+					                         alt="Bostar Rey">
+					                </a>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostaraiko">
+                                        <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostaraiko.jpg"
+					                         alt="Bostar Aiko">
+					                </a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostaraiko">
+                                        <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostaraiko2.jpg"
+					                         alt="Bostar Aiko">
+					                </a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostaraiko">
+                                        <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"   
+					                         data-src="images/bostar/bostaraiko3.jpg"
+					                         alt="Bostar Aiko">
+					                </a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostaraiko">
+                                        <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostaraiko4.jpg"
+					                         alt="Bostar Aiko">
+					                </a>
+                                    </div>
+
+
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostaraa">
+                                        <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostaraa.jpg"
+					                         alt="Bostar Aa">
+					                </a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostaraa">
+                                        <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostaraa2.jpg"
+					                         alt="Bostar Aa">
+					                </a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostaraa">
+                                        <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"   
+					                         data-src="images/bostar/bostaraa3.jpg"
+					                         alt="Bostar Aa">
+					                </a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtbostaraa">
+                                        <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/bostaraa4.JPG"
+					                         alt="Bostar Aa">
+					                </a>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtboslang">
+                                        <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/boslang.jpg"
+					                         alt="Bos Lang">
+					                </a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtboslang">
+                                        <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/boslang2.jpg"
+					                         alt="Bos Lang">
+					                </a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtboslang">
+                                        <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"   
+					                         data-src="images/bostar/boslang3.jpg"
+					                         alt="Bos Lang">
+					                </a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb filter phtboslang">
+                                        <a class="thumbnail" href="#">
+					                    <img class="img-fluid modal-target img-thumbnail lazy"  
+					                         data-src="images/bostar/boslang4.jpg"
+					                         alt="Bos Lang">
+					                </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script>
+        let modalId = $('#image-gallery');
+
+        $(document)
+            .ready(function() {
+                loadGallery(true, 'a.thumbnail');
+
+                function disableButtons(counter_max, counter_current) {
+                    $('#show-previous-image, #show-next-image')
+                        .show();
+                    if (counter_max === counter_current) {
+                        $('#show-next-image')
+                            .hide();
+                    } else if (counter_current === 1) {
+                        $('#show-previous-image')
+                            .hide();
+                    }
+                }
+
+                function loadGallery(setIDs, setClickAttr) {
+                    let current_image,
+                        selector,
+                        counter = 0;
+
+                    $('#show-next-image, #show-previous-image')
+                        .click(function() {
+                            if ($(this)
+                                .attr('id') === 'show-previous-image') {
+                                current_image--;
+                            } else {
+                                current_image++;
+                            }
+
+                            selector = $('[data-image-id="' + current_image + '"]');
+                            updateGallery(selector);
+                        });
+
+                    function updateGallery(selector) {
+                        let $sel = selector;
+                        current_image = $sel.data('image-id');
+                        $('#image-gallery-title')
+                            .text($sel.data('title'));
+                        $('#image-gallery-image')
+                            .attr('src', $sel.data('image'));
+                        disableButtons(counter, $sel.data('image-id'));
+                    }
+
+                    if (setIDs == true) {
+                        $('[data-image-id]')
+                            .each(function() {
+                                counter++;
+                                $(this)
+                                    .attr('data-image-id', counter);
+                            });
+                    }
+                    $(setClickAttr)
+                        .on('click', function() {
+                            updateGallery($(this));
+                        });
+                }
+            });
+
+        $(document).ready(function() {
+
+            $(".filter-button").click(function() {
+                var value = $(this).attr('data-filter');
+
+                if (value == "all") {;
+                    $('.filter').show('1000');
+                } else {
+                    $(".filter").not('.' + value).hide('3000');
+                    $('.filter').filter('.' + value).show('3000');
+
+                }
+            });
+
+        });
+    </script>
+
+    <div id="modal" class="modal">
+        <span id="modal-close" class="modal-close">&times;</span>
+        <img id="modal-content" class="modal-content">
+        <div id="modal-caption" class="modal-caption"></div>
+    </div>
+
+    <div class="footer_bg">
+        <section class="info_section layout_padding2-bottom">
+            <div class="container">
+                <h3 class="">
+                    Bos2bos
+                </h3>
+            </div>
+            <div class="container info_content">
+                <div>
+                    <div class="row">
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="d-flex">
+                                <h5>
+                                    Akses Cepat
+                                </h5>
+                            </div>
+                            <div class="d-flex ">
+                                <ul>
+                                    <li>
+                                        <a href="about">
+                      Tentang Kami
+                    </a>
+                                    </li>
+                                    <li>
+                                        <a href="faq">
+                      FAQ
+                    </a>
+                                    </li>
+                                    <li>
+                                        <a href="contact">
+                      Kontak
+                    </a>
+                                    </li>
+                                </ul>
+                                <ul class="ml-3 ml-md-5">
+                                    <li>
+                                        <a href="blog">
+                      Blog
+                    </a>
+                                    </li>
+                                    <li>
+                                        <a href="privacy">
+                      Kebijakan Privasi
+                    </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="d-flex">
+                                <h5>
+                                    Hubungi Kami
+                                </h5>
+                            </div>
+                            <div class="d-flex ">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                      Alamat: Business City, CBC Cengkareng, Jl. Atang Sanjaya No. 26, Kamal, Benda, Tangerang City
+                    </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                      WhatsApp: +62 895-3351-63574
+                    </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                      Email: cs.bos2bos@gmail.com
+                    </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="d-flex">
+                                <h5>
+                                    Kontak Ditjen PKTN
+                                </h5>
+                            </div>
+                            <div class="d-flex ">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                      Telepon: +62-21-3858171, +62-21-3451692
+                    </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                      Email: contact.us@kemendag.go.id
+                    </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center align-items-lg-baseline">
+                    <div class="social-box">
+                        <a target="_blank" href="https://www.facebook.com/bos2bosindonesia/">
+              <img src="images/fb.png" alt="Facebook"/>
+            </a>
+                        <a target="_blank" href="https://www.instagram.com/bos2bos_host/">
+              <img src="images/instagram1.png" alt="Instagram"/>
+            </a>
+                        <a target="_blank" href="https://www.tiktok.com/@bos2bos_indonesia21">
+              <img src="images/tiktok.png"  alt="Tiktok"/>
+            </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid footer_section">
+            <p>
+                © 2021 | design by B2B
+            </p>
+        </section>
+    </div>
+    <script type='text/javascript'>
+        //Popup Image
+        $('.thumb img').bind('contextmenu', function(e) {
+            return false;
+        });
+        $('.modal img').bind('contextmenu', function(e) {
+            return false;
+        });
+
+        //Loader
+        $(document).ready(function() {
+            $(".preloader").fadeOut();
+        })
+
+        //Modal Image
+        var modal = document.getElementById('modal');
+
+        var modalClose = document.getElementById('modal-close');
+        modalClose.addEventListener('click', function() {
+            modal.style.display = "none";
+        });
+
+        document.addEventListener('click', function(e) {
+            if (e.target.className.indexOf('modal-target') !== -1) {
+                var img = e.target;
+                var modalImg = document.getElementById("modal-content");
+                var captionText = document.getElementById("modal-caption");
+                modal.style.display = "block";
+                modalImg.src = img.src;
+                captionText.innerHTML = img.alt;
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var lazyloadImages;
+
+            if ("IntersectionObserver" in window) {
+                lazyloadImages = document.querySelectorAll(".lazy");
+                var imageObserver = new IntersectionObserver(function(entries, observer) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            var image = entry.target;
+                            image.src = image.dataset.src;
+                            image.classList.remove("lazy");
+                            imageObserver.unobserve(image);
+                        }
+                    });
+                });
+
+                lazyloadImages.forEach(function(image) {
+                    imageObserver.observe(image);
+                });
+            } else {
+                var lazyloadThrottleTimeout;
+                lazyloadImages = document.querySelectorAll(".lazy");
+
+                function lazyload() {
+                    if (lazyloadThrottleTimeout) {
+                        clearTimeout(lazyloadThrottleTimeout);
+                    }
+
+                    lazyloadThrottleTimeout = setTimeout(function() {
+                        var scrollTop = window.pageYOffset;
+                        lazyloadImages.forEach(function(img) {
+                            if (img.offsetTop < (window.innerHeight + scrollTop)) {
+                                img.src = img.dataset.src;
+                                img.classList.remove('lazy');
+                            }
+                        });
+                        if (lazyloadImages.length == 0) {
+                            document.removeEventListener("scroll", lazyload);
+                            window.removeEventListener("resize", lazyload);
+                            window.removeEventListener("orientationChange", lazyload);
+                        }
+                    }, 20);
+                }
+
+                document.addEventListener("scroll", lazyload);
+                window.addEventListener("resize", lazyload);
+                window.addEventListener("orientationChange", lazyload);
+            }
+        })
+    </script>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+
+</html>
