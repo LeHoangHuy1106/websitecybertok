@@ -163,6 +163,7 @@ img.servicesmobile {
     height: 40vh;
     background: -webkit-gradient(linear, left top, right top, from(#1E5FAF), to(#1E5FAF));
     background: linear-gradient(to right, #1E5FAF, #1E5FAF);
+    background-color: #1E5FAF;
 }
 
 .hero_area::before {
@@ -348,26 +349,26 @@ a:focus {
     left: 2%;
 }
 
-.slider_section .carousel_btn-container .carousel-control-prev,
-.slider_section .carousel_btn-container .carousel-control-next {
-    position: relative;
-    width: 50px;
-    height: 50px;
-    border: none;
-    border-radius: 100%;
-    opacity: 1;
-    background-repeat: no-repeat;
-    background-size: 14px;
-    background-position: center;
-    background-color: #383a90;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
+    .slider_section .carousel_btn-container .carousel-control-prev,
+    .slider_section .carousel_btn-container .carousel-control-next {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        border: none;
+        border-radius: 100%;
+        opacity: 1;
+        background-repeat: no-repeat;
+        background-size: 14px;
+        background-position: center;
+        background-color: #1E5FAF;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
 
-.slider_section .carousel_btn-container .carousel-control-prev:hover,
-.slider_section .carousel_btn-container .carousel-control-next:hover {
-    background-color: #feb543;
-}
+        .slider_section .carousel_btn-container .carousel-control-prev:hover,
+        .slider_section .carousel_btn-container .carousel-control-next:hover {
+            background-color: #1E5FAF;
+        }
 
 .slider_section .carousel_btn-container .carousel-control-prev {
     background-image: url(../images/prev.png);

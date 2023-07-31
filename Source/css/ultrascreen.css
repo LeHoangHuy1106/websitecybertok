@@ -171,8 +171,8 @@ img.servicesmobile {
 
 .hero_area {
     height: 94vh;
-    background: -webkit-gradient(linear, left top, right top, from(#28ae4a), to(#20763E));
-    background: linear-gradient(to right, #28ae4a, #20763E);
+    background: -webkit-gradient(linear, left top, right top, from(#1E5FAF), to(#1E5FAF));
+    background: linear-gradient(to right,#1E5FAF, #1E5FAF);
 }
 
 .hero_area::before {
