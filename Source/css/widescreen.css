@@ -161,7 +161,7 @@ img.servicesmobile {
 
 .hero_area {
     height: 94vh;
-    background: -webkit-gradient(linear, left top, right top, from(#1E5FAF), to(#1E5FAF));
+    background-color :#1E5FAF;
     background: linear-gradient(to right,#1E5FAF,#1E5FAF);
 }
 
@@ -1013,7 +1013,7 @@ button.btn.btn-menu-list {
     height: 270px;
     background-image: url("images/bostar.png");
     color: #FFFFFF;
-    background-position
+
 }
 
 .bostar-detail {
